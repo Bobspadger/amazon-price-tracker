@@ -8,6 +8,7 @@ user_agent = ''
 
 
 # Time interval in seconds for when the tracker checks prices
+# 15 minutes (1800 seconds) is recommended in order to avoid being blocked by Amazon
 check_interval = 1800
 
 
@@ -35,3 +36,8 @@ reciever_phone_number = ''
 # Cell provider for the phone number ('at&t', 'verizon', or 'tmobile')
 # Leave '' if no phone number is given
 reciever_cell_provider = ''
+
+
+# You may leave this as default
+CSV_ITEM_FILE = os.path.join(sys.path[0], "data", "data.csv")
+ITEM_NUM_FILE = os.path.join(sys.path[0], "data", "itemNum.txt")
